@@ -18,7 +18,7 @@ const getInfo = async (event) => {
         cityName.innerHTML = "This field must be filled";
     }else{
         try{
-            let url = `http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=417b392cbeed8f5d242b24671e98b9db`;
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=417b392cbeed8f5d242b24671e98b9db`;
             const response = await fetch(url);
             const data = await response.json();
             const arrData = [data];
