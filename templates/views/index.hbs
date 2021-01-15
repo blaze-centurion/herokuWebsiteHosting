@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.green.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    {{>header}}
+
+    <div class="main-content my-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 my-auto">
+                    <div class="content">
+                        <h3>Welcome To Weather App</h3>
+                        <h1>Get The Latest <span>Weather</span> Info Of Your City</h1>
+                        <a href="weather" class="btn">Check Now</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 my-auto order-first">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="images/bg1.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/bg2.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/bg3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+        })
+    </script>
+</body>
+</html>

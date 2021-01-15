@@ -1,0 +1,283 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+#header
+{
+    background: #253647;
+    color: #fff;
+}
+.logo
+{
+    font-size: 2rem;
+    padding: 5px;
+}
+#menu
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu li
+{
+    display: inline-block;
+}
+#menu li a
+{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+.aboutImgBox
+{
+    width: 410px;
+    height: 500px;
+    position: relative;
+}
+.aboutImgBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.item
+{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    margin: 0 25px;
+}
+.item img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ErrorBox
+{
+    width: 1100px;
+    height: 550px;
+    position: relative;
+}
+.ErrorBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.go-back
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 20px; */
+}
+.content h3
+{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.content h1
+{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.content h1 span
+{
+    color: #3498db;
+    font-size: 2.2rem;
+}
+.content a.btn
+{
+    background: rgb(229, 226, 226);
+    border-radius: 10pc;
+    box-shadow: 2px 20px 39px -14px #000;
+}
+#footer
+{
+    background: #253647;
+    color: #fff;
+    text-align: center;
+    line-height: 2.4rem;
+    margin-top: auto;
+}
+
+.temp_form
+{
+    width: 60%;
+    position: relative;
+    margin: 3rem auto;
+}
+.temp_form input[type="text"]
+{
+    width: 100%;
+    padding: 13px 20px;
+    background: #1e202b;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 3rem;
+}
+.temp_form input[type="submit"]
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 1.3rem;
+    background: #009adb;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+::placeholder
+{
+    color: rgb(226, 219, 219);
+}
+.tempInfo
+{
+    width: 65%;
+    background: #1e202b;
+    color: #fff;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.top_layer
+{
+    width: 100%;
+    height: 20%;
+    background: #16171f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.main_layer
+{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main_layer p
+{
+    padding: 10px 20px;
+}
+.main_layer .middle_layer
+{
+    display: flex;
+    justify-content: space-around;
+}
+.main_layer .middle_layer p#temp
+{
+    font-size: 3rem;
+}
+.main_layer .middle_layer p#temp span
+{
+    font-size: 3.3rem;
+}
+.main_layer .middle_layer p#temp_status
+{
+    font-size: 3rem;
+}
+
+@media (max-width: 1000px)
+{
+    .item
+    {
+        width: 300px;
+    }
+    .aboutImgBox
+    {
+        width: 310px;
+    }
+    .temp_form
+    {
+        width: 80%;
+    }
+    .tempInfo
+    {
+        width:90%;
+    }
+}
+@media (max-width: 780px)
+{
+    .aboutImgBox
+    {
+        margin: 20px auto;
+        width: 400px;
+    }
+    .content
+    {
+        text-align: center;
+    }
+    .content h3
+    {
+        margin: 2rem 0;
+    }
+    .content h1
+    {
+        margin: 2rem;
+    }
+    .content a.btn
+    {
+        margin-bottom: 2rem;
+    }
+    .item
+    {
+        margin: 20px auto;
+        width: 450px;
+    }
+    .tempInfo
+    {
+        margin-bottom: 4rem;
+    }
+    #menu
+    {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 600px)
+{
+    #header
+    {
+        text-align: center;
+    }
+    #menu
+    {
+        margin: 1rem;
+    }
+}
+@media (max-width: 450px)
+{
+    .temp_form input[type="submit"]
+    {
+        padding: 6px 15px;
+        text-align: center;
+    }
+}
