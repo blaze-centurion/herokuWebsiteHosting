@@ -16,8 +16,6 @@ const getInfo = async (event) => {
 
     if(cityVal === ""){
         cityName.innerHTML = "This field must be filled";
-        temp_real_val.innerText = 0;
-        temp_status.innerHTML = "<i class='fa fa-cloud' style='color: #f1f2f6;'></i>"
     }else{
         try{
             let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=417b392cbeed8f5d242b24671e98b9db`;
@@ -45,6 +43,8 @@ const getInfo = async (event) => {
         }
         catch{
             cityName.innerText = "Plz Enter City Name Properly";
+            temp_real_val.innerText = 0;
+            temp_status.innerHTML = "<i class='fa fa-cloud' style='color: #f1f2f6;'></i>"
         }
     }
 }
